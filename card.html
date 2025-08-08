@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real Estate Services</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2em;
+      background: #121212;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      max-width: 1000px;
+      width: 100%;
+      
+    }
+
+    .card {
+      flex: 1 1 150px;
+      height: 250px;
+      border-radius: 4px;
+      background: #212121;
+      overflow: hidden;
+      cursor: pointer;
+      border: 1px solid #3027dd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease;
+      min-width: 140px;
+    }
+
+    .card:hover {
+      flex: 4 1 300px;
+    }
+
+    .card span {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      color: #5048e5;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: transform 0.5s ease;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .card:hover span {
+      transform: rotate(0deg);
+      writing-mode: horizontal-tb;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .card {
+        flex: 1 1 auto;
+        height: 60px;
+      }
+
+      .card:hover {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card"><span>Property Sale</span></div>
+    <div class="card"><span>Property Rental</span></div>
+    <div class="card"><span>Investment Consulting</span></div>
+    <div class="card"><span>Commercial Real Estate</span></div>
+    <!-- <div class="card"><span>Legal Assistance</span></div> -->
+    <div class="card"><span>Property Valuation</span></div>
+  </div>
+ 
+   <script>
+    // Toggle active class on mobile tap
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', () => {
+        // Remove active from all cards
+        document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
+        // Add active to the clicked card
+        card.classList.add('active');
+      });
+    });
+  </script>
+
+
+
+</body>
+</html>

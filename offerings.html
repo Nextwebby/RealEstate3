@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real Estate Offerings</title>
+
+  <!-- ✅ Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+  <style>
+    .img-full {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .heading{
+        margin-top: 100px;
+    }
+
+    .text-box {
+      background-color: #2d3748;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      text-align: center;
+      height: 100%;
+    }
+
+    .text-box h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .text-box p {
+      font-size: 15px;
+      color: #a99c9c;
+      max-width: 300px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .column-fixed-height {
+      height: 400px;
+    }
+
+    @media (max-width: 767.98px) {
+      .column-fixed-height {
+        height: auto;
+      }
+
+      .img-full {
+        height: 250px;
+      }
+    }
+
+    .faq-section {
+      padding: 60px 20px;
+    }
+
+    .faq-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .accordion-item {
+      background-color: #1e1e1e;
+      border: none;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .accordion-button {
+      background-color: #1e1e1e;
+      color: #fff;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .accordion-button:hover {
+      background-color: #292929;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #292929;
+      color: #fff;
+    }
+
+    .accordion-body {
+      background-color: #1e1e1e;
+      color: #ccc;
+      padding: 20px;
+      font-size: 15px;
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="text-primary">Modern</span>Estates
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="offerings.html">Offerings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- <button class="btn btn-primary ms-lg-3" id="searchBtn">
+                    <i class="fas fa-search me-2"></i>Search
+                </button> -->
+            </div>
+        </div>
+    </nav>
+
+<div class="container-fluid ">
+    <div class="heading">
+  <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">Our <span class="text-primary">Offerings</span></h2>
+                <p class="text-muted">What makes us different from others</p>
+            </div>
+    </div>
+   
+  <div class="row">
+    <!-- Column 1: Image -->
+    <div class="col-md-3 col-12 column-fixed-height p-0">
+      <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d" alt="Expert Guidance" class="img-full">
+    </div>
+
+    <!-- Column 2: Text -->
+    <div class="col-md-3 col-12 text-box column-fixed-height">
+      <div>
+        <h2>Expert Guidance</h2>
+        <p>
+          Our experienced real estate professionals help you make smart, informed decisions every step of the way.
+        </p>
+      </div>
+    </div>
+
+    <!-- Column 3: Image -->
+    <div class="col-md-3 col-12 column-fixed-height p-0">
+      <img src="./images/home11.jpg" alt="Client Satisfaction" class="img-full">
+    </div>
+
+    <!-- Column 4: Text -->
+    <div class="col-md-3 col-12 text-box column-fixed-height">
+      <div>
+        <h2>Client Satisfaction</h2>
+        <p>
+          We prioritize your happiness by offering personalized service, ensuring a smooth and satisfying experience.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-0">
+   
+
+    <!-- Column 6: Text -->
+    <div class="col-md-3 col-12 text-box column-fixed-height">
+      <div>
+        <h2>Market Insights</h2>
+        <p>
+          Stay ahead with in-depth knowledge of current property trends, pricing strategies, and investment opportunities.
+        </p>
+      </div>
+    </div>
+     <!-- Column 5: Image -->
+    <div class="col-md-3 col-12 column-fixed-height p-0">
+      <img src="./images/home12.jpg" alt="Market Insights" class="img-full">
+    </div>
+
+    
+
+    <!-- Column 8: Text -->
+    <div class="col-md-3 col-12 text-box column-fixed-height">
+      <div>
+        <h2>Custom Solutions</h2>
+        <p>
+          Whether buying, selling, or investing — we tailor our services to match your unique real estate goals.
+        </p>
+      </div>
+    </div>
+    <!-- Column 7: Image -->
+    <div class="col-md-3 col-12 column-fixed-height p-0">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Custom Solutions" class="img-full">
+    </div>
+  </div>
+</div>
+
+<section class="faq-section">
+  <div class="container">
+ <h2 class="fw-bold text-center mb-5">Frequently Asked <span class="text-primary">Questions</span></h2>
+
+    <div class="accordion animate__animated animate__fadeInUp" id="faqAccordion">
+
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1-heading">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+            What types of properties do you offer?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We offer residential plots, apartments, villas, and commercial properties tailored to your needs.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            Do you assist with home loan services?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we assist clients in securing home loans through trusted financial institutions and banks.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            Is a site visit available before booking?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Absolutely! We provide free site visits so you can explore properties in person before making a decision.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq4-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+            Do you offer custom real estate solutions?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, whether you're buying, selling, or investing, we tailor our solutions to meet your specific goals.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <a class="navbar-brand mb-3" href="#">
+                        <span class="text-primary">Modern</span>Estates
+                    </a>
+                    <p class="text-muted">Premium real estate services for discerning clients worldwide. Finding your dream property is our passion.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-muted">Home</a></li>
+                        <li class="mb-2"><a href="#properties" class="text-muted">Properties</a></li>
+                        <li class="mb-2"><a href="#services" class="text-muted">Services</a></li>
+                        <li class="mb-2"><a href="#offerings" class="text-muted">Offerings</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="mb-4">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-muted">Property Sales</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Property Rental</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Investment Consulting</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Commercial Real Estate</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Property Management</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="text-muted">Subscribe to get updates on new properties and market trends.</p>
+                    <form class="mt-4">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control border-0" placeholder="Your Email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted mb-0">&copy; 2023 LuxuryEstates. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-muted mb-0">Designed with <i class="fas fa-heart text-danger"></i> by LuxuryEstates Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+<!-- ✅ Bootstrap JS (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
